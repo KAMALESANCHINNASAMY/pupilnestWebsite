@@ -1,0 +1,109 @@
+.head-con {
+    background: linear-gradient(135deg, #de01de, rgb(108, 0, 108));
+    height: 440px;
+    display: flex;
+    align-items: center;
+    margin: 40px 15px;
+    border-radius: 5px;
+}
+
+.contact-con {
+    margin: 45px 15px;
+    height: 400px;
+    display: flex;
+    border-radius: 7px;
+    // border-top: 2px solid rgb(138, 7, 138);
+    // border-bottom: 2px solid rgb(138, 7, 138);
+    // border-left: 2px solid rgb(138, 7, 138);
+    // border-right: 2px solid rgb(138, 7, 138);
+    // background-color: #de01de;
+    background: linear-gradient(135deg, #780578,#fc59fc,#fc59fc, rgb(108, 0, 108));
+}
+
+.head-content {
+    padding-right: 200px;
+    padding-left: 200px;
+    color: grey;
+    font-size: 19px;
+    line-height: 29px;
+    word-spacing: 2px;
+}
+
+.req-demo-text-home {
+    color: #0071c5;
+    background-color: white;
+    padding: 7px 14px 7px 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+}
+
+.req-demo-text-home:hover {
+    box-shadow: 0px 0px 2px 2px rgba(225, 231, 233, 0.3);
+}
+
+.dash-board-con {
+    width: 50%;
+    padding: 10px;
+    border-right: 2px dashed white;
+}
+
+.dash-board-text {
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+.req-demo-text {
+    background-color: #045bb8;
+    padding: 7px 14px 7px 14px;
+    font-weight: 500;
+    margin-right: 30px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+.req-demo-text:hover {
+    box-shadow: 0px 0px 2px 2px rgba(1, 176, 251, 0.3);
+}
+
+::ng-deep .mat-icon-head {
+    height: 70px !important;
+    width: 200px !important;
+}
+
+.text-input {
+    outline: none;
+    border: 1px solid lightgrey;
+    height: 30px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.text-input:focus {
+    border: 1px solid lightblue;
+    box-shadow: 0px 0px 0px 3px rgba(0, 94, 255, 0.2);
+}
+
+label {
+    margin: 5px;
+}
+
+.web-name {
+    font-size: 23px;
+    color: #004792;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+p:hover {
+    color: #004792;
+    font-weight: 500;
+}

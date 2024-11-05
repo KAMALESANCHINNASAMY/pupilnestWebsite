@@ -1,0 +1,21 @@
+.web-name {
+    font-size: 23px;
+    color: #004792;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.menu-name {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.menu-name:hover {
+    color: blue;
+}
+
+::ng-deep .mat-icon-foot {
+    height: 35px !important;
+    width: 200px !important;
+}
