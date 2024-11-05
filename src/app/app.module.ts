@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './components/footer/footer.component';
+import {ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, MatIconModule, BrowserAnimationsModule, MatButtonModule
+    AppRoutingModule, MatIconModule, BrowserAnimationsModule, MatButtonModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

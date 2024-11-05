@@ -358,35 +358,44 @@
         </div>
         <div
             style="width: 50%;display: flex;justify-content: center;gap: 20px;align-items: center;">
-            <form>
+            <form (ngSubmit)="submit()" [formGroup]="messageForm">
                 <h2
                     style="font-size: 35px;color: #045bb8;font-family: sans-serif;">Book
                     a demo</h2>
 
                 <div style="margin-top: 20px;">
                     <div>
-                        <label>Name</label>
+                        <label>Name<span style="color: red;">*</span></label>
                     </div>
                     <div>
-                        <input style="width: 300px;" class="text-input" />
-                    </div>
-                </div>
-
-                <div style="margin-top: 20px;">
-                    <div>
-                        <label>Mobile Number</label>
-                    </div>
-                    <div>
-                        <input style="width: 300px;" class="text-input" />
+                        <input
+                            [ngClass]="{'input-invalid': messageForm.controls.name.touched && messageForm.controls.name.invalid}"
+                            formControlName="name" style="width: 300px;"
+                            class="text-input" required />
                     </div>
                 </div>
 
                 <div style="margin-top: 20px;">
                     <div>
-                        <label>Message</label>
+                        <label>Mobile Number<span style="color: red;">*</span></label>
                     </div>
                     <div>
-                        <textarea style="width: 300px;" class="text-input"></textarea>
+                        <input
+                            [ngClass]="{'input-invalid': messageForm.controls.mobile.touched && messageForm.controls.mobile.invalid}"
+                            formControlName="mobile" style="width: 300px;"
+                            class="text-input" required />
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <div>
+                        <label>Message<span style="color: red;">*</span></label>
+                    </div>
+                    <div>
+                        <textarea
+                            [ngClass]="{'input-invalid': messageForm.controls.message.touched && messageForm.controls.message.invalid}"
+                            formControlName="message"
+                            style="width: 300px;" class="text-input" required></textarea>
                     </div>
                 </div>
 
