@@ -19,3 +19,36 @@
     height: 35px !important;
     width: 200px !important;
 }
+
+.foot-main-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copy-right-text {
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .foot-main-div {
+        flex-direction: column;
+    }
+
+    .copy-right-text {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 770px) {
+    .foot-main-div {
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+
+    .copy-right-text {
+        font-size: 14px;
+    }
+}

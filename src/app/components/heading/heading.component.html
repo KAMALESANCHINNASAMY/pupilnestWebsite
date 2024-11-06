@@ -1,57 +1,85 @@
 <div class="parent-heading">
-    <div class="img-parent">
-        <div>
-            <img width="70" height="70"
+    <div class="heading">
+        <div class="img-parent">
+            <img class="img-cl"
                 src="../../../assets/pupilnest-removebg-preview.png" />
+            <div class="web-name">Pupil Nest</div>
         </div>
-        <div class="web-name">Pupil Nest</div>
-    </div>
-    <div style="display: flex;gap: 30px;font-weight: 500;">
-        <div [routerLink]="[]" [fragment]="'homediv'" class="menu-name">Home</div>
-        <div [routerLink]="[]" [fragment]="'aboutdiv'" class="menu-name">About</div>
-        <div [routerLink]="[]" [fragment]="'featuresdiv'" class="menu-name">Features</div>
-        <div [routerLink]="[]" [fragment]="'benefitsdiv'" class="menu-name">Benefits</div>
-        <div [routerLink]="[]" [fragment]="'contactusdiv'" class="menu-name">Contact</div>
-    </div>
-    <div style="display: flex;align-items: center;gap: 20px;">
-        <div [routerLink]="[]" [fragment]="'contactusdiv'" class="req-demo-text">Request
-            a demo</div>
-    </div>
+        <div class="heading-desck">
+            <div [routerLink]="[]" [fragment]="'homediv'" class="menu-name">Home</div>
+            <div [routerLink]="[]" [fragment]="'aboutdiv'" class="menu-name">About</div>
+            <div [routerLink]="[]" [fragment]="'featuresdiv'" class="menu-name">Features</div>
+            <div [routerLink]="[]" [fragment]="'benefitsdiv'" class="menu-name">Benefits</div>
+            <div [routerLink]="[]" [fragment]="'contactusdiv'" class="menu-name">Contact</div>
+        </div>
 
-    <div
-        style="position: fixed;bottom: 30px;right: 20px;z-index: 99;display: flex;flex-direction: column; align-items: end;">
-        <div *ngIf="showScrollButton" style="margin-bottom: 5px;width: 150px;"
-            [routerLink]="[]"
-            [fragment]="'homediv'"
-            class="contact-bottom-but">
-            <div><mat-icon style="font-weight: 900;font-size: 30pxa;">keyboard_arrow_up</mat-icon></div>
-            <div>Click to go up</div>
+        <div>
+            <div [routerLink]="[]" [fragment]="'contactusdiv'"
+                class="req-demo-text">Request
+                a demo</div>
         </div>
-        <div [routerLink]="[]" [fragment]="'contactusdiv'" style="width: 180px;"
-            class="contact-bottom-but">
-            <div><mat-icon>message</mat-icon></div>
-            <div>Contact US</div>
-        </div>
-    </div>
 
-    <div
-        style="position: fixed;bottom: 50%;right:0;z-index: 99;">
-        <div style="margin-bottom: 5px;">
-            <a href="tel:+917373888677"
-                style="background-color: rgba(0, 1, 1, 0.6);border-top-left-radius: 10px;padding: 10px;display: flex;justify-content: center;
+        <div class="mat-menu-mob" [matMenuTriggerFor]="menu"><mat-icon
+                style="font-size: 35px;padding: 0px 20px;cursor: pointer;">dehaze</mat-icon></div>
+
+        <div
+            style="position: fixed;bottom: 30px;right: 0px;z-index: 99;display: flex;flex-direction: column; align-items: end;">
+            <div *ngIf="showScrollButton"
+                style="margin-bottom: 5px;"
+                [routerLink]="[]"
+                [fragment]="'homediv'"
+                class="contact-bottom-but">
+                <div><mat-icon style="font-weight: 900;font-size: 30pxa;">keyboard_arrow_up</mat-icon></div>
+                <div>Click to go up</div>
+            </div>
+            <div [routerLink]="[]" [fragment]="'contactusdiv'"
+                class="contact-bottom-but">
+                <div><mat-icon>message</mat-icon></div>
+                <div>Contact US</div>
+            </div>
+        </div>
+
+        <div
+            style="position: fixed;bottom: 50%;right:0;z-index: 99;">
+            <div style="margin-bottom: 5px;">
+                <a href="tel:+917373888677"
+                    style="background-color: rgba(0, 1, 1, 0.6);border-top-left-radius: 10px;padding: 10px;display: flex;justify-content: center;
             border-bottom-left-radius: 10px; ">
-                <mat-icon style="color: white; font-size: 24px;">call</mat-icon>
-            </a>
-        </div>
+                    <mat-icon style="color: white; font-size: 24px;">call</mat-icon>
+                </a>
+            </div>
 
-        <div style="margin-top: 5px;">
-            <a href="https://wa.me/7373888677"
-                style="background-color: rgba(0, 1, 1, 0.6);border-top-left-radius: 10px;padding: 10px;display: flex;justify-content: center;
+            <div style="margin-top: 5px;">
+                <a href="https://wa.me/7373888677"
+                    style="background-color: rgba(0, 1, 1, 0.6);border-top-left-radius: 10px;padding: 10px;display: flex;justify-content: center;
             border-bottom-left-radius: 10px; " target="_blank">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                    alt="WhatsApp" width="30">
-            </a>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                        alt="WhatsApp" width="30">
+                </a>
+            </div>
         </div>
     </div>
+
+    <mat-menu style="margin: 50px;" #menu="matMenu">
+        <button mat-menu-item>
+            <div [routerLink]="[]" [fragment]="'homediv'" class="menu-name">Home</div>
+        </button>
+        <button mat-menu-item>
+
+            <div [routerLink]="[]" [fragment]="'aboutdiv'" class="menu-name">About</div>
+        </button>
+        <button mat-menu-item>
+
+            <div [routerLink]="[]" [fragment]="'featuresdiv'" class="menu-name">Features</div>
+        </button>
+        <button mat-menu-item>
+
+            <div [routerLink]="[]" [fragment]="'benefitsdiv'" class="menu-name">Benefits</div>
+        </button>
+        <button mat-menu-item>
+
+            <div [routerLink]="[]" [fragment]="'contactusdiv'" class="menu-name">Contact</div>
+        </button>
+    </mat-menu>
 </div>

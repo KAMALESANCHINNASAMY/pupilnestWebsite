@@ -1,23 +1,8 @@
-.head-con {
-    background: linear-gradient(135deg, #de01de, rgb(108, 0, 108));
-    height: 440px;
-    display: flex;
-    align-items: center;
-    margin: 40px 15px;
-    border-radius: 5px;
-}
-
-.contact-con {
-    margin: 45px 15px;
-    height: 400px;
-    display: flex;
-    border-radius: 7px;
-    // border-top: 2px solid rgb(138, 7, 138);
-    // border-bottom: 2px solid rgb(138, 7, 138);
-    // border-left: 2px solid rgb(138, 7, 138);
-    // border-right: 2px solid rgb(138, 7, 138);
-    // background-color: #de01de;
-    background: linear-gradient(135deg, #780578,#fc59fc,#fc59fc, rgb(108, 0, 108));
+.first-head {
+    color: #045bb8;
+    font-size: 50px;
+    word-spacing: 7px;
+    font-family: sans-serif;
 }
 
 .head-content {
@@ -29,6 +14,46 @@
     word-spacing: 2px;
 }
 
+.head-con {
+    background: linear-gradient(135deg, #de01de, rgb(108, 0, 108));
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 40px 20px;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.dash-board-con {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash-board-text {
+    color: white;
+    width: 50%;
+}
+
+.contact-con {
+    height: auto;
+    margin: 20px;
+    display: flex;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #780578, #fc59fc, #fc59fc, rgb(108, 0, 108));
+}
+
+.contact-con-first-div {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
 .req-demo-text-home {
     color: #0071c5;
     background-color: white;
@@ -38,22 +63,11 @@
     cursor: pointer;
     width: 140px;
     text-align: center;
+    margin-top: 60px;
 }
 
 .req-demo-text-home:hover {
     box-shadow: 0px 0px 2px 2px rgba(225, 231, 233, 0.3);
-}
-
-.dash-board-con {
-    width: 50%;
-    padding: 10px;
-    border-right: 2px dashed white;
-}
-
-.dash-board-text {
-    color: white;
-    width: 50%;
-    padding: 20px;
 }
 
 .req-demo-text {
@@ -110,4 +124,187 @@ p:hover {
 .input-invalid {
     border: 1px solid red;
     box-shadow: 0px 0px 0px 3px rgba(255, 0, 0, 0.2);
+}
+
+.erp-explain {
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.about-erp-head {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+.about-contebt {
+    display: flex;
+    padding: 0px 60px;
+    border: 2px dashed lightgray;
+    border-radius: 5px;
+}
+
+.about-contebt-first-div {
+    width: 60%;
+    font-size: 18px;
+}
+
+.about-div-mar {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-contebt-second-div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-of-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 32px;
+}
+
+.dash-board-text-letter {
+    line-height: 26px;
+    font-size: 19px;
+}
+
+.btn-save{
+    background-color: white;
+    border: 0px;
+    cursor: pointer;
+    padding: 9px 13px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: background-color 0.4s ease;
+}
+
+.btn-save:hover{
+//box-shadow: 0px 0px 6px 2px rgb(0, 0, 0,0.4);
+background-color: lightgrey;
+}
+
+.btn-save:active{
+    background-color: whitesmoke;
+}
+
+//---------------------------------
+@media (max-width: 500px) {
+    .first-head {
+        font-size: 30px;
+    }
+
+    .head-content {
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .head-con {
+        background: linear-gradient(135deg, #de01de, rgb(108, 0, 108));
+        height: auto;
+        display: block;
+        align-items: center;
+        margin: 10px 10px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .dash-board-con {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dash-board-text {
+        color: white;
+        width: 100%;
+    }
+
+    .dash-board-text-letter {
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .erp-explain {
+        font-size: 24px;
+    }
+
+    .req-demo-text-home {
+        margin-top: 25px;
+    }
+
+    .about-erp-head {
+        font-size: 19px;
+    }
+
+    .about-contebt {
+        flex-direction: column-reverse;
+        padding: 0px 20px;
+    }
+
+    .about-contebt-first-div {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about-contebt-second-div {
+        width: 100%;
+    }
+
+    .about-div-mar {
+        padding: 10px;
+    }
+
+    .contact-con {
+        margin: 10px;
+        display: block;
+    }
+
+    .contact-con-first-div {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 770px) {
+    .head-content {
+        padding-right: 115px;
+        padding-left: 115px;
+        font-size: 19px;
+        line-height: 29px;
+    }
+
+    .erp-explain {
+        font-size: 24px;
+    }
+
+    .about-contebt {
+        flex-direction: column-reverse;
+        padding: 0px 10px;
+    }
+
+    .about-contebt-first-div {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .about-contebt-second-div {
+        width: 100%;
+    }
+
+    .contact-con-first-div {
+        flex-direction: column;
+        width: 100%;
+    }
 }

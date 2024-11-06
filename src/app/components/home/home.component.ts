@@ -24,14 +24,14 @@ export class HomeComponent {
       let values = this.messageForm.value
       this.emailService.sendEmail(values.name || '', values.mobile || '', values.message || '').then(
         (response) => {
-          debugger
+
           if (response.status === 200) {
             alert('Email sent successfully!');
             this.messageForm.reset();
           }
         },
         (error) => {
-          debugger
+
           alert('Failed to send email. Please try again.');
         }
       );

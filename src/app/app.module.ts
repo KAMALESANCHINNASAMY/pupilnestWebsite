@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { FooterComponent } from './components/footer/footer.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import {ReactiveFormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, MatIconModule, BrowserAnimationsModule, MatButtonModule,ReactiveFormsModule
+    AppRoutingModule, MatIconModule, BrowserAnimationsModule, MatButtonModule,ReactiveFormsModule,MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
